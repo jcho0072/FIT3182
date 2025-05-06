@@ -1,0 +1,14 @@
+Possible Camera Events:
+A,B,C,(A, B),(B, C)
+Start Camera can be either A or B
+End Camera can be either B or C
+
+Relationship:
+Camera -> Many to Many -> Violation
+Vehicle -> 1 to Many -> Violation
+
+Notes:
+Having many indexes for collection with high write-to-read ratio can be expensive because indexes need to be updated for insert and update operations.
+
+Lucid Chart Link:
+https://lucid.app/lucidchart/88c2424d-5f88-4bfd-b6de-302f8a366921/edit?viewport_loc=-381%2C160%2C3027%2C1575%2C0_0&invitationId=inv_13152dce-fab3-4d1e-b05e-60309084d49b
